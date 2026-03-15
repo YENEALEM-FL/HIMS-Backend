@@ -96,17 +96,17 @@ Body:
 }
 '''
 
-##### PUT /users/<id>
+#### PUT /users/<id>
 
 Updates a user.
 
-##### DELETE /users/<id>
+#### DELETE /users/<id>
 
 Deletes a user.
 
 ✔️ Health Check
 
-##### GET /health
+#### GET /health
 
 Returns:
 
