@@ -1,0 +1,70 @@
+# -------------------------
+# Python cache + bytecode
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Disable Python bytecode if accidentally created
+*.pyc
+*.pyo
+
+# -------------------------
+# Virtual environments
+# -------------------------
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# -------------------------
+# Environment variables
+# -------------------------
+.env
+.env.*
+*.env
+
+# -------------------------
+# IDE / Editor files
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+# OS-generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+log/
+
+# -------------------------
+# Build / Distribution
+# -------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -------------------------
+# MySQL dumps
+# -------------------------
+*.sql
+*.sql.gz
+
+# -------------------------
+# Cache folders
+# -------------------------
+.cache/
+pytest_cache/
