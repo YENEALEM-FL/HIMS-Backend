@@ -22,10 +22,12 @@ It is designed to be simple, modular, and easy to extend.
 
 #### All dependencies are listed in requirements.txt:
 
+'''
 Flask==3.0.0
 SQLAlchemy==2.0.22
 mysql-connector-python==8.3.0
 python-dotenv==1.0.0
+'''
 
 Install them with:
 
@@ -37,11 +39,12 @@ pip freeze > requirements.txt => to save the requirements for later use.
 
 #### Database settings are loaded from the .env file:
 
+'''
 DB_HOST=localhost
 DB_USER=admin
 DB_PASSWORD=1234@Abcd
 DB_NAME=HIMSDB
-DB_PORT=3306
+DB_PORT=3306 '''
 
 - add PYTHONDONTWRITEBYTECODE=1 in .env file.
 
@@ -53,9 +56,11 @@ DB_PORT=3306
 
 #### Create and activate a virtual environment:
 
+'''
 python -m venv venv
 source venv/bin/activate # Linux/macOS
 venv\Scripts\activate # Windows
+'''
 
 #### Install required packages:
 
@@ -68,26 +73,28 @@ flask run
 The server will start at:
 
 http://127.0.0.1:5000
-📚 API Endpoints
 
-##### GET /users
+### 📚 API Endpoints
+
+#### GET /users
 
 Returns all users.
 
-##### GET /users/<id>
+#### GET /users/<id>
 
 Returns a single user.
 
-##### POST /users
+#### POST /users
 
 Creates a new user.
-
+'''
 Body:
 
 {
 "name": "John Doe",
 "email": "john@example.com"
 }
+'''
 
 ##### PUT /users/<id>
 
@@ -107,6 +114,7 @@ Returns:
 
 ### 📁 Project Structure
 
+'''
 backend/
 ├─ app.py # Entry point for running the application
 ├─ .env # Environment variables for database credentials
@@ -124,7 +132,11 @@ backend/
 ├─ **init**.py
 └─ users.py
 
+'''
+
 ### 🧩 Notes
+
+'''
 
 The project uses Blueprints for clean route organization.
 
@@ -134,4 +146,5 @@ SQLAlchemy automatically creates the users table if it doesn’t exist.
 
 You can easily extend this structure with more models, routes, services, or repositories.
 
-Always activate the virtual environment before running the server
+Always activate the virtual environment before running the server.
+'''
