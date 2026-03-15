@@ -16,17 +16,8 @@ __pycache__/
 # Virtual environments
 # -------------------------
 venv/
-env/
-ENV/
 .venv/
 .python-version
-
-# -------------------------
-# Environment variables
-# -------------------------
-.env
-.env.*
-*.env
 
 # -------------------------
 # IDE / Editor files

@@ -43,6 +43,8 @@ DB_PASSWORD=1234@Abcd
 DB_NAME=HIMSDB
 DB_PORT=3306
 
+- add PYTHONDONTWRITEBYTECODE=1 in .env file.
+
 #### Update these values in .env if needed.
 
 ▶️ Running the Application
