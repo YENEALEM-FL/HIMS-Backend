@@ -7,24 +7,17 @@ import os
 # Load .env file
 load_dotenv()
 
-# Read database config from environment
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_USER = os.getenv("DB_USER", "admin")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "1234@Abcd")
-DB_NAME = os.getenv("DB_NAME", "HIMSDB")
-DB_PORT = int(os.getenv("DB_PORT", 3306))
-
 # Create Base for models
 Base = declarative_base()
 
 # Build SQLAlchemy URL
 DATABASE_URL = URL.create(
     "mysql+mysqlconnector",
-    username=DB_USER,
-    password=DB_PASSWORD,
-    host=DB_HOST,
-    port=DB_PORT,
-    database=DB_NAME,
+    username=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    host=os.getenv("DB_HOST"),
+    port=int(os.getenv("DB_PORT")),
+    database=os.getenv("DB_NAME"),
 )
 
 # Create engine and session
