@@ -30,6 +30,7 @@ class UserRepository:
             user.name = data["name"]
             user.email = data["email"]
             session.commit()
+            session.refresh(user)
             return user
 
     @staticmethod
